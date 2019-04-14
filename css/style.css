@@ -13,7 +13,9 @@ body {
 .color-dark-green {
   color: #013b13;
 }
-
+.bg-dark-green {
+  background-color: #013b13;
+}
 /*HEADER*/
 header {
   min-height: 200px;
@@ -30,6 +32,7 @@ header .logo {
   width: 500px;
   top: -200px;
   right: calc(50% - 250px);
+  max-width: 100%;
 }
 header .header-title {
   font-size: 50px;
@@ -97,14 +100,6 @@ footer .email {
 }
 
 /*FORM*/
-footer .form-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
-
 footer .form-wrapper .input-bg {
   border-radius: 19px;
 }
