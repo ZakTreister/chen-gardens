@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*GENERAL STYLES*/
+.bg-light-green {
+  background-color: #8cc540;
+}
+.color-dark-green {
+  color: #013b13;
+}
+
+/*HEADER*/
+header {
+  min-height: 200px;
+  position: relative;
+}
+header .basad {
+  height: 50px;
+}
+header .logo {
+  background: url("img/logo.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 700px;
+  width: 500px;
+  top: -200px;
+  right: calc(50% - 250px);
+}
+header .header-title {
+  font-size: 50px;
+  font-weight: 100;
+  position: absolute;
+  bottom: -10px;
+}
+
+/*MAIN*/
+main {
+  min-height: 400px;
+  background: url('/img/main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .main-wrapper {
+  position: relative;
+  min-height: 400px;
+}
+main .main-wrapper .main-title {
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: -18px;
+}
+main .main-circle {
+  position: absolute;
+  right: -100px;
+  height: 500px;
+  width: 500px;
+  /* border-radius: 50%;
+  background-color: #609640; */
+  background: url('/img/circle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .main-circle p {
+  width: 100px;
+  height: 100px;
+  font-size: 35px;
+  font-weight: 100;
+  color: #fff;
+}
+/*FOOTER*/
+footer {
+  min-height: 300px;
+}
+footer .images-wrapper {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .phone {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+footer .email {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+/*FORM*/
+footer .form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+footer .form-wrapper .input-bg {
+  border-radius: 19px;
+}
