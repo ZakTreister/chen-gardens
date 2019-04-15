@@ -44,7 +44,7 @@ header .header-title {
 /*MAIN*/
 main {
   min-height: 400px;
-  background: url('/img/main.jpg');
+  background: url("/img/main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,7 +65,7 @@ main .main-circle {
   width: 500px;
   /* border-radius: 50%;
   background-color: #609640; */
-  background: url('/img/circle.svg');
+  background: url("/img/circle.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -85,6 +85,10 @@ footer .images-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+footer .images-wrapper img {
+  border: 2px #fff solid;
+  border-radius: 25px;
 }
 footer .phone {
   text-align: center;
