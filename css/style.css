@@ -1,10 +1,27 @@
+@font-face {
+  font-family: 'OpensansHebrew';
+  src: url('/fonts/opensanshebrew-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OpensansHebrew';
+  src: url('/fonts/opensanshebrew-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'OpensansHebrew';
+  src: url('/fonts/opensanshebrew-extrabold-webfont.ttf') format('truetype');
+  font-weight: 900;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "OpensansHebrew", Arial, Helvetica, sans-serif;
 }
 /*GENERAL STYLES*/
 .bg-light-green {
@@ -16,6 +33,9 @@ body {
 .bg-dark-green {
   background-color: #013b13;
 }
+
+
+
 /*HEADER*/
 header {
   min-height: 200px;
@@ -25,13 +45,10 @@ header .basad {
   height: 50px;
 }
 header .logo {
-  background: url("img/logo.svg");
+  background: url(img/logo.svg);
   background-repeat: no-repeat;
-  position: absolute;
-  height: 700px;
-  width: 500px;
-  top: -200px;
-  right: calc(50% - 250px);
+  height: 200px;
+  width: 250px;
   max-width: 100%;
 }
 header .header-title {
@@ -55,19 +72,18 @@ main .main-wrapper {
 main .main-wrapper .main-title {
   font-size: 35px;
   font-weight: bold;
-  position: absolute;
-  top: -18px;
 }
 main .main-circle {
   position: absolute;
-  right: -100px;
-  height: 500px;
-  width: 500px;
-  /* border-radius: 50%;
-  background-color: #609640; */
-  background: url("/img/circle.svg");
+  right: 10%;
+  top: 70%;
+  height: 150px;
+  width: 150px;
+  background: url("/img/circle.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  font-size: 30px;
+  color: #fff;
 }
 main .main-circle p {
   width: 100px;
@@ -106,4 +122,8 @@ footer .email {
 /*FORM*/
 footer .form-wrapper .input-bg {
   border-radius: 19px;
+  background: url('/img/input.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
