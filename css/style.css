@@ -64,15 +64,19 @@ main {
   background: url('../img/main.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: bottom;
 }
 main .main-wrapper {
   position: relative;
   min-height: 400px;
 }
+
 main .main-wrapper .main-title {
   font-size: 35px;
   font-weight: bold;
+  line-height: 0.9;
 }
+
 main .main-circle {
   position: absolute;
   right: 10%;
@@ -85,6 +89,7 @@ main .main-circle {
   font-size: 30px;
   color: #fff;
 }
+
 main .main-circle p {
   width: 100px;
   height: 100px;
@@ -96,10 +101,6 @@ main .main-circle p {
 footer {
   min-height: 300px;
 }
-footer .images-wrapper {
-  padding-top: 40px;
-  width: 100%;
-}
 footer .images-wrapper img {
   border: 2px #fff solid;
   border-radius: 25px;
@@ -108,8 +109,9 @@ footer .phone {
   text-align: center;
   padding-top: 30px;
   font-size: 50px;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   font-weight: 800;
+  line-height: 1.2;
 }
 footer .email {
   text-align: center;
@@ -125,4 +127,18 @@ footer .form-wrapper .input-bg {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  main .main-circle {
+    right: 5%;
+  }
+  footer .phone {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  
+  footer .email {
+    font-size: 22px;
+  }
 }
