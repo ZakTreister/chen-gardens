@@ -58,7 +58,7 @@ header .header-title {
 
 /*MAIN*/
 main {
-  min-height: 400px;
+  min-height: 600px;
   background: url("../img/main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +70,7 @@ main .main-wrapper {
 }
 
 main .main-wrapper .main-title {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 0.9;
 }
@@ -78,7 +78,7 @@ main .main-wrapper .main-title {
 main .main-circle {
   position: absolute;
   right: 10%;
-  top: 70%;
+  top: 121%;
   height: 150px;
   width: 150px;
   background: url("../img/circle.png");
@@ -143,8 +143,15 @@ footer .form-wrapper .detail-label {
 }
 
 @media only screen and (max-width: 767px) {
+  main {
+    min-height: 400px;
+  }
   main .main-circle {
     right: 5%;
+    top: 70%;
+  }
+  main .main-wrapper .main-title {
+    font-size: 30px;
   }
   footer .phone {
     letter-spacing: 2px;
